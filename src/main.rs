@@ -2,7 +2,7 @@ use clap::Clap;
 use rand::seq::SliceRandom;
 
 #[derive(Clap)]
-#[clap(version = "0.1.0")]
+#[clap(version = "0.1.1")]
 struct Opts {
     /// Prints more verbose information used for debugging.
     #[clap(short, long)]
