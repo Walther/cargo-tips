@@ -16,8 +16,8 @@ Original inspiration from [this tweet](https://twitter.com/lcnr7/status/13068861
 
 ## Usage
 
-- `cargo install tips` to install the binary
-- `tips -h` for up to date help & usage information
+- `cargo install cargo-tips` to install the binary
+- `cargo tips -h` for up to date help & usage information
 
 ## License
 

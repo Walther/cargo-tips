@@ -1,12 +1,18 @@
 use clap::Clap;
 use rand::seq::SliceRandom;
 
-#[derive(Clap)]
-#[clap(version = "0.1.1")]
+#[derive(Debug, Clap)]
 struct Opts {
     /// Prints more verbose information used for debugging.
     #[clap(short, long)]
     debug: bool,
+}
+
+#[derive(Debug, Clap)]
+#[clap(version = "0.1.2", name = "cargo-tips", bin_name = "cargo")]
+enum Cargo {
+    #[clap(name = "tips")]
+    Tips(Opts),
 }
 
 /// List of tips available in this program.
@@ -17,7 +23,7 @@ const TIPS: &'static [&'static str] = &[
 ];
 
 fn main() {
-    let opts: Opts = Opts::parse();
+    let Cargo::Tips(opts) = Cargo::parse();
     if opts.debug {
         println!("{} tips available", TIPS.len());
     }
