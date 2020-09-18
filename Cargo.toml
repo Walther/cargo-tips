@@ -5,6 +5,7 @@ authors = ["Walther <veeti.haapsamo@gmail.com>"]
 edition = "2018"
 license = "MIT OR Apache-2.0"
 description = "TIP: you can get tips while using cargo and rust!"
+readme = "README.md"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
